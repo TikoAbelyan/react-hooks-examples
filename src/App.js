@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./App.css";
-
+//Effect callbacks are synchronous to prevent race conditions. Put the async function inside
 const useFetch = url => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
